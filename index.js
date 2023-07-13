@@ -51,7 +51,7 @@ app.post("/users", async (req, res) => {
   const newPost = new DataModel(req.body);
   try {
     const savedPost = await newPost.save();
-    res.status(200).json("Book has been added successfully.")
+    res.status(200).json("User has been added successfully.")
   } catch (err) {
     res.status(500).json(err);
   }
