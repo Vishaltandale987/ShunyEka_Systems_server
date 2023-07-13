@@ -71,6 +71,20 @@ app.delete("/users/:id", async (req, res) => {
   }
 });
 
+//find single user
+
+app.get("/users/:id", async (req, res) => {
+
+
+  try {
+   let notes =  await DataModel.findById(req.params.id);
+    res.send(notes);
+
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 
 // edit 
 
