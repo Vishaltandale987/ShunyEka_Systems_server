@@ -27,7 +27,7 @@ app.use(cors());
 //welcome
 
 app.get("/", (req, res) => {
-  res.send("Welcome to frist Microservices.");
+  res.send("Welcome to ShunyEka Systems Assignment Server.");
 
 });
 
